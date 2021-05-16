@@ -1,3 +1,4 @@
+export TERMINAL="st"
 # single tap to click thinkpad
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
 # natural scrolling
