@@ -1,8 +1,12 @@
 #!/bin/sh
-
+# loads xmodmap
 [ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
+# loads xresources
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
-xset r rate 200 50
+# set key input rate
+xset r rate 200 25
+
+xcompmgr &
 
 exec i3

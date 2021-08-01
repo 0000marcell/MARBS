@@ -1,0 +1,2 @@
+# enable transparency in X
+xcompmgr -c &
