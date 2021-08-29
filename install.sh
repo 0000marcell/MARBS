@@ -1,4 +1,6 @@
-sudo pacman -S X xmodmap nvim joplin chromium st patch feh locate xcompmgr 
+# this is deprecated i'm installing in each file install-x, install-i3 etc...
+
+# sudo pacman -S X xmodmap nvim joplin chromium st patch feh locate xcompmgr 
 
 # joplin install joplin we need to install nvm and then node and then joplin
 # install nvm
