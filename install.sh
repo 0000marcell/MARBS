@@ -28,7 +28,7 @@ cp ./keymap.json ~/.config/joplin
 # sound
 # alsa is already installed by default
 # install alsa-utils to use amixer
-pacman -S alsa-utils
+pacman -Sy alsa-utils
 
 # activate sound channels
 amixer sset Master unmute
