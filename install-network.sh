@@ -1,6 +1,6 @@
 sudo pacman -Syuu
 
-sudo pacman -S iwd
+sudo pacman -S iwd chromium
 
 sudo systemctl start iwd.service
 
