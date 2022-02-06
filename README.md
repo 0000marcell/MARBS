@@ -1,27 +1,28 @@
 # Arch Linux Auto Rice Bootstrap Scripts
 
-These script will install and configure linux tools in your environment how to install it and what is included 
+Minimalist archlinux rice boostrap with just the essentials.
+These script will install and configure linux tools in your archlinux environment how to install and what is included 
 is described in each section.
 
-[vim](#vim)
+[Instalation](#installation)
 
-[i3wm](#vim)
+In a fresh archlinux install with internet access
+```
+curl https://raw.githubusercontent.com/0000marcell/MARBS/master/download.sh | bash
 
-[st](#st)
-
-[git and github](#git)
+```
 
 [Xorg](#xorg)
 
-<a href="#vim">vim</a>
+[st](#st)
 
-<a href="i3wm">i3wm</a>
+[i3wm](#vim)
 
-<a href="st">st</a>
+[neovim](#neovim)
+neovim very simple configuration with plug
+https://github.com/0000marcell/MARBS/blob/master/config/nvim/init.vim
 
-<a href="git">git</a>
-
-<a href="xorg">xorg</a>
+[git and github](#git)
 
 
 
