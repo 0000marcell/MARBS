@@ -1,6 +1,9 @@
 #!/bin/sh
 # loads xmodmap
-[ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
+if [ -f ~/.Xmodmap ]; then
+  xmodmap ~/.Xmodmap
+  echo "us" > ~/kbstate
+fi
 # loads xresources
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 
