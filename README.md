@@ -40,10 +40,25 @@ if you don't want caps_lock swapped by super you can just swap back editing thes
 files, if you have problems with the mapping you can use xev to figure out your keysym 
 and edit the files
 
+## Fonts
 
-## St
+I use Liberation Mono everywhere, if you want to use a different font you can add fonts
+in /usr/share/fonts then
+```
+fc-cache -vf
+```
+and run
+```
+fc-list
+```
+you should see a list of all available fonts in your system, you can grab the name of 
+the font in the second argument after the first `:` then you can use this name on 
+`~/.config/fontconfig/fonts.conf` most apps get the fonts from that file, for the 
+st terminal you need to compile again with the font name that you want to use
 
-## i3wm
+## ST
+
+## i3WM
 
 
 ## nvim
@@ -51,7 +66,3 @@ neovim very simple configuration with plug
 https://github.com/0000marcell/MARBS/blob/master/config/nvim/init.vim
 
 ## git
-
-
-
-
