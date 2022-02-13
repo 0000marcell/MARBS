@@ -14,6 +14,32 @@ curl https://raw.githubusercontent.com/0000marcell/MARBS/master/download.sh | ba
 
 ## Xorg
 
+### Keyboards
+Two different layouts are used, 
+* .Xmodmap(US) with caps_lock swapped for super 
+* .Xmodmap(BR) with caps_lock swapped for super 
+
+I also use a script to toggle between the two kb layouts
+```
+#!/usr/bin/bash
+
+LAYOUT=$(cat ~/kbstate)
+echo $LAYOUT
+
+if [ $LAYOUT = us ]; then
+  notify-send "keyboard layout changed to BR"
+  xmodmap ~/.Xmodmapbr
+  echo "br" > ~/kbstate
+else
+  notify-send "keyboard layout changed to US"
+  xmodmap ~/.Xmodmap
+  echo "us" > ~/kbstate
+fi
+```
+if you don't want caps_lock swapped by super you can just swap back editing these two
+files, if you have problems with the mapping you can use xev to figure out your keysym 
+and edit the files
+
 
 ## St
 
