@@ -27,9 +27,6 @@ genfstab -U /mnt >> /mnt/etc/fstab
 # ghroot
 arch-chroot /mnt
 
-# install neovim
-pacman -Sy neovim networkmanager grub efibootmgr sudo ttf-fira-code openssh zip unzip
-
 # create your user
 echo mmc > /etc/hostname
 
