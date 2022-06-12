@@ -49,5 +49,5 @@ order += "tztime local"
 #}
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "%H:%M:%S  %Y-%m-%d  "
 }
