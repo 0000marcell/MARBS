@@ -108,6 +108,9 @@ st.font: Monospace-16;
 *.color14:	#93a1a1
 *.color15:	#fdf6e3
 
+
+*.color0:	#120938
+
 /* !! xterm */
 /* *.color0:   #000000 */
 /* *.color1:   #cd0000 */
