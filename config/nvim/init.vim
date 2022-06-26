@@ -91,6 +91,8 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-surround'
 " Vue syntax
 Plug 'posva/vim-vue'
+" Markdown
+Plug 'gabrielelana/vim-markdown'
 " React syntax
 Plug 'maxmellon/vim-jsx-pretty'
 " Jump to specific letters

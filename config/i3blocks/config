@@ -1,0 +1,30 @@
+command=/usr/lib/i3blocks/$BLOCK_NAME
+separator_block_width=15
+markup=pango
+
+[keyboard]
+command=setxkbmap -query | grep layout | sed 's/layout:     //g'
+interval=1
+signal=12
+
+[volume]
+interval=once
+command=i3volume
+signal=10
+
+[bat-status]
+command=echo "$(cat /sys/class/power_supply/BAT0/status)%"
+interval=5
+
+[battery]
+command=echo "$(cat /sys/class/power_supply/BAT0/capacity)%"
+interval=5
+
+[battery]
+command=echo "$(cat /sys/class/power_supply/BAT1/capacity)%"
+interval=5
+
+[time]
+#label=📅
+command=TZ=Brazil/East date -R
+interval=1
