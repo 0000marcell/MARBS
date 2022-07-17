@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+
+LAYOUT=$(cat ~/kbstate)
+echo $LAYOUT
+
+if [ $LAYOUT = us ]; then
+  notify-send "keyboard layout changed to BR"
+  xmodmap ~/.Xmodmapbr
+  echo "br" > ~/kbstate
+else
+  notify-send "keyboard layout changed to US"
+  xmodmap ~/.Xmodmap
+  echo "us" > ~/kbstate
+fi
