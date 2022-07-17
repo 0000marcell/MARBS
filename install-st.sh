@@ -1,4 +1,4 @@
-sudo pacman -Sy xorg-init xorg-xrdb xcompmgr unzip make pkg-config gcc
+sudo pacman -Syuu --noconfirm xorg-init xorg-xrdb xcompmgr unzip make pkg-config gcc
 
 cp ./.Xresources ~/
 xrdb ~/.Xresources

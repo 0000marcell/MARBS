@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # install nvim
-sudo pacman -Sy neovim
+sudo pacman -Sy --noconfirm neovim
 
 # copy config files
 cp -R ./config/nvim ~/.config

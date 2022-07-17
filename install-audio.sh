@@ -1,3 +1,3 @@
-sudo pacman -Syuu
+sudo pacman -Syuu --noconfirm
 
-sudo pacman -S alsamixer pavucontrol
+sudo pacman -S --noconfirm alsamixer pavucontrol
