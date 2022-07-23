@@ -16,11 +16,15 @@ signal=10
 command=echo "$(cat /sys/class/power_supply/BAT0/status)%"
 interval=5
 
-[battery]
+[battery-capacity]
 command=echo "$(cat /sys/class/power_supply/BAT0/capacity)%"
 interval=5
 
-[battery]
+[battery-status]
+command=echo "$(cat /sys/class/power_supply/BAT1/status)%"
+interval=5
+
+[battery-capacity]
 command=echo "$(cat /sys/class/power_supply/BAT1/capacity)%"
 interval=5
 

@@ -16,6 +16,10 @@ xinput set-prop "bcm5974" "libinput Natural Scrolling Enabled" 1
 # set key input rate
 xset r rate 200 25
 
+~/scripts/checkbatcapacity &
+dunst &
+source ~/.profile
+
 xcompmgr &
 
 exec i3
