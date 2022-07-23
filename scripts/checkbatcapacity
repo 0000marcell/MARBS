@@ -1,0 +1,19 @@
+#!/home/mmc/.config/nvm/versions/node/v12.16.1/bin/node
+
+const cron = require('node-cron')
+const fs = require('fs')
+const { exec } = require('child_process')
+
+const checkBatteryCapacity = (bat) => {
+  batCapacity = fs.readFileSync(`/sys/class/power_supply/${bat}/capacity`, 'utf8')
+  batCapacity = parseInt(batCapacity.replace('\n', ''))
+  return batCapacity;
+}
+
+cron.schedule('* * * * * *', () => {
+  let bat1 = checkBatteryCapacity('BAT0') 
+  let bat2 = checkBatteryCapacity('BAT1') 
+  if (bat1 < 100 && bat2 < 100){
+    exec('dunstify "LOW BATTERY!!!"')
+  }
+})
