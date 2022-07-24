@@ -18,7 +18,6 @@ xset r rate 200 25
 
 ~/scripts/checkbatcapacity &
 dunst &
-source ~/.profile
 
 xcompmgr &
 
