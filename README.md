@@ -65,4 +65,17 @@ st terminal you need to compile again with the font name that you want to use
 neovim very simple configuration with plug
 https://github.com/0000marcell/MARBS/blob/master/config/nvim/init.vim
 
-## git
+## checkbatcapacity
+
+Script to check bat capacity and send notification when battery is low
+needs to be adapted to different computers
+
+`https://github.com/0000marcell/MARBS/blob/master/scripts/checkbatcapacity`
+
+## Notifications
+
+Dunst is used for notifications
+
+
+
+
