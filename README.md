@@ -78,12 +78,38 @@ Dunst is used for notifications
 
 ## .bashrc
 
-Notebook touchpad configuration
-```bash
+The following is a short explanation on the default 
+configuration on bash
 
+```bash
+# Environment variable used by a lot of different programs
+export TERMINAL="st"
+export EDITOR="nvim"
+export BROWSER="brave"
+
+# copy uses xclip and copies to the clipboard
+alias copy="xclip -selection clipboard "
+# syntax highlight for cat
+alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax highlighting.
+# default pdf viewer
+alias pdf='zathura'
+
+
+# Quickly open a file in VIM
+vf() { $EDITOR $(fzf) ;}
+
+# uses $c, $s, and $d to quickly access these folders
+export c="/home/mmc/.config"
+export s="/home/mmc/scripts"
+export d="/home/mmc/Downloads"
+
+# add scripts folder to path
+# add script folder to path
+export PATH="$PATH:$HOME/scripts"
 ```
 this one is computer specific, you will need to figure out your hardware to configure 
-### xinput
+## xinput
+Used to configure peripherals like the touchpad
 How to find the name of your devices
 ```
 xinput list
@@ -103,7 +129,7 @@ the second one is the name of the prop and the third one is the value, in this
 case I'm enabling tapping
 
 After figuring out what you need to do a good place to save these 
-configurations in in `~/.xinitrc`
+configurations is in `~/.xinitrc`
 
 
 

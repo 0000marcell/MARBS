@@ -1,29 +1,24 @@
+# Environment variable used by a lot of different programs
 export TERMINAL="st"
-
-#mmc 
-# use single tap to click
-xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
-# natural scrolling
-xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 export EDITOR="nvim"
 export BROWSER="brave"
 
+# copy uses xclip and copies to the clipboard
 alias copy="xclip -selection clipboard "
+# syntax highlight for cat
 alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax highlighting.
+# default pdf viewer
 alias pdf='zathura'
 
 
 # Quickly open a file in VIM
 vf() { $EDITOR $(fzf) ;}
 
+# uses $c, $s, and $d to quickly access these folders
 export c="/home/mmc/.config"
 export s="/home/mmc/scripts"
 export d="/home/mmc/Downloads"
 
+# add scripts folder to path
 # add script folder to path
 export PATH="$PATH:$HOME/scripts"
