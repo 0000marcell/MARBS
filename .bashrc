@@ -9,6 +9,7 @@ alias copy="xclip -selection clipboard "
 alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax highlighting.
 # default pdf viewer
 alias pdf='zathura'
+alias r='ranger'
 
 # Quickly open a file in VIM
 vf() { $EDITOR $(fzf) ;}

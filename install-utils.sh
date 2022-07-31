@@ -1,1 +1,1 @@
-sudo pacman -Syuu --noconfirm xclip highlight zathura
+sudo pacman -Syuu --noconfirm xclip highlight zathura ranger
