@@ -14,6 +14,16 @@ export EDITOR="nvim"
 export BROWSER="brave"
 
 alias copy="xclip -selection clipboard "
+alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax highlighting.
+alias pdf='zathura'
+
+
+# Quickly open a file in VIM
+vf() { $EDITOR $(fzf) ;}
+
+export c="/home/mmc/.config"
+export s="/home/mmc/scripts"
+export d="/home/mmc/Downloads"
 
 # add script folder to path
 export PATH="$PATH:$HOME/scripts"
