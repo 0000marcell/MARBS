@@ -76,6 +76,35 @@ needs to be adapted to different computers
 
 Dunst is used for notifications
 
+## .bashrc
+
+Notebook touchpad configuration
+```bash
+
+```
+this one is computer specific, you will need to figure out your hardware to configure 
+### xinput
+How to find the name of your devices
+```
+xinput list
+```
+A list of devices will be shown then use `list-props` to show the possible configuration
+of that device, in my case, I have a Thinkpad with Synaptics touchpad
+```
+xinput "SynPS/2 Synaptics TouchPad" list-props
+```
+then a list of possible configuration will show up you can enable disable increase
+decrease the prop values with
+```
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+```
+the first argument is the name of the device, the touchpad in this case 
+the second one is the name of the prop and the third one is the value, in this
+case I'm enabling tapping
+
+After figuring out what you need to do a good place to save these 
+configurations in in `~/.xinitrc`
+
 
 
 
