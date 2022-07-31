@@ -16,9 +16,12 @@
 # set key input rate
 xset r rate 200 25
 
+# script to checkbatcapacity on thinkpad, you will need to change the script in your macine
 ~/scripts/checkbatcapacity &
+# default notification 
 dunst &
 
+# composite for xorg used to make st terminal transparent
 xcompmgr &
 
 exec i3

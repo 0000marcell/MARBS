@@ -10,7 +10,6 @@ alias ccat="highlight --out-format=ansi" # Color cat - print file with syntax hi
 # default pdf viewer
 alias pdf='zathura'
 
-
 # Quickly open a file in VIM
 vf() { $EDITOR $(fzf) ;}
 
