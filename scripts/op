@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+FOLDER=$(ls $p | fzf)
+cd $p/$FOLDER
