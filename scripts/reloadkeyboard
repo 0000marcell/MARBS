@@ -1,1 +1,8 @@
-/home/mmc/.scripts/reloadkeyboard
+#!/usr/bin/bash
+
+# Change between my notebook laptop and my logitech one
+[ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
+[ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+
+# set key input rate
+xset r rate 200 25
