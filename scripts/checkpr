@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+SELECTED=$(gh pr list -L 9999999 | fzf)
+NUMBER=$(echo -e "$SELECTED" | awk '{ print  $1}')
+gh pr checkout $NUMBER

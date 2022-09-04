@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+SELECTION=$(ls ~/.screenlayout | fzf)
+bash ~/.screenlayout/$SELECTION
