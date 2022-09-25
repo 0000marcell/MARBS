@@ -3,4 +3,4 @@
 #D writedoc
 #D grabs the doc pattern inside the scripts and output to standard out
 
-grep -h '\#D' ./* | tr -d '#D'
+rg -oN '^\#D.*' $s/* | rg -o '#D.*' | tr -d '#D'
