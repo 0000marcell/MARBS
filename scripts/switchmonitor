@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 #D switchmonitor
-#D choose other monitors to use based on a list saved in my computer
+#D Choose other monitors to use based on a list saved in my computer
 #D
 
 SELECTION=$(ls ~/.screenlayout | fzf)
