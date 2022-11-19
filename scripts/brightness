@@ -5,6 +5,7 @@
 #D just pass a value between 0 - 500
 #D shows the current brightness if no value is passed
 #D This script needs to be run with sudo
+#D
 
 if [ -z $1 ]; then
   cat /sys/class/backlight/intel_backlight/brightness

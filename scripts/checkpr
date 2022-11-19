@@ -1,5 +1,11 @@
 #!/usr/bin/bash
 
+#D checkpr
+#D list all open pr for the current projects
+#D you can select and then download the PR locally with this
+#D uses gh to do this, so you need to download and configure gh
+#D
+
 SELECTED=$(gh pr list -L 9999999 | fzf)
 NUMBER=$(echo -e "$SELECTED" | awk '{ print  $1}')
 gh pr checkout $NUMBER

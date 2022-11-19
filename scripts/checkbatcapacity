@@ -23,5 +23,3 @@ cron.schedule('* * * * * *', () => {
     }
   }
 })
-
-// asdfaskldj

@@ -1,3 +1,7 @@
 #!/usr/bin/bash
 
+#D copy
+#D copy data to the clipboard
+#D
+
 xclip -selection Clipboard

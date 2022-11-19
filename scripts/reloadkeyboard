@@ -1,6 +1,10 @@
 #!/usr/bin/bash
 
-# Change between my notebook laptop and my logitech one
+#D reloadkeyboard
+#D reload your keyboard configuration
+#D usefull when you plug a different keyboard in your computer
+#D 
+
 [ -f ~/.Xmodmap ] && xmodmap ~/.Xmodmap
 [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
 

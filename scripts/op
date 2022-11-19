@@ -1,4 +1,11 @@
 #!/usr/bin/bash
 
+#D op
+#D open personal projects folder
+#D you need to set your personal project folder
+#D
+
+$PPFOLDER = "~/ghp"
+
 FOLDER=$(ls $p | fzf)
-cd $p/$FOLDER
+cd $PPFOLDER/$FOLDER
