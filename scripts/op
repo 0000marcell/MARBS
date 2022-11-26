@@ -5,7 +5,7 @@
 #D you need to set your personal project folder
 #D
 
-$PPFOLDER = "~/ghp"
+PPFOLDER="$HOME/ghp"
 
-FOLDER=$(ls $p | fzf)
+FOLDER=$(ls $PPFOLDER | fzf)
 cd $PPFOLDER/$FOLDER
