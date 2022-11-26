@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+#D screen 
+#D list all available arandr screen layouts 
+#D arandr needs to be installed
+#D
+
+OPTS=$(ls ~/.screenlayout/)
+SELECTION=$(echo -e "$OPTS" | fzf)
+bash ~/.screenlayout/$SELECTION

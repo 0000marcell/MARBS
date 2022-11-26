@@ -1,5 +1,10 @@
 #!/usr/bin/bash
 
+#D deleteinfolder 
+#D list files for selection then delete them, but first shows 
+#D a prompt for confirmation
+#D
+
 SELECTION=$(du -h ./ | grep [0-9]M | fzf | awk '{ print $2 }')
 
 while true; do
