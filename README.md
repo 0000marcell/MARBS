@@ -108,7 +108,9 @@ export d="/home/mmc/Downloads"
 export PATH="$PATH:$HOME/scripts"
 ```
 this one is computer specific, you will need to figure out your hardware to configure 
+
 ## xinput
+
 Used to configure peripherals like the touchpad
 How to find the name of your devices
 ```
@@ -130,7 +132,3 @@ case I'm enabling tapping
 
 After figuring out what you need to do a good place to save these 
 configurations is in `~/.xinitrc`
-
-
-
-
