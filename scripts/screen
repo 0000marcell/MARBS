@@ -8,3 +8,4 @@
 OPTS=$(ls ~/.screenlayout/)
 SELECTION=$(echo -e "$OPTS" | fzf)
 bash ~/.screenlayout/$SELECTION
+feh --bg-scale ~/.config/i3/background.jpg
