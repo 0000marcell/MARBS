@@ -9,7 +9,12 @@ is described in each section.
 In a fresh archlinux install with internet access
 ```
 curl https://raw.githubusercontent.com/0000marcell/MARBS/master/download.sh | bash
+```
 
+## After Instalation
+
+```
+startx
 ```
 
 ## Xorg
