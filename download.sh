@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 curl https://codeload.github.com/0000marcell/MARBS/zip/heads/master -o marbs.zip
-sudo pacman -S unzip make pgk-config c99
+sudo pacman -S unzip make pgk-config c99 openssh
 unzip ./marbs.zip
 
 cd MARBS-heads-master
