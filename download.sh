@@ -13,3 +13,4 @@ bash install-audio.sh
 bash install-nvim.sh
 bash install-st.sh
 bash install-postgres.sh
+bash install-utils.sh
