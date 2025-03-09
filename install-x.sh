@@ -4,3 +4,4 @@ cp ./.xinitrc ~/
 cp ./.Xmodmap ~/
 cp ./.Xmodmapbr ~/
 cp ./.Xresources ~/
+xmodmap ~/.Xmodmap

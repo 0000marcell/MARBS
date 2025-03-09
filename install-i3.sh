@@ -6,3 +6,4 @@ mkdir -p ~/.config/i3blocks
 cp -r ./config/i3/* ~/.config/i3
 cp -r ./config/i3blocks/* ~/.config/i3blocks
 cp ./background.jpg ~/.config/i3/
+i3-msg restart
