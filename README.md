@@ -67,7 +67,7 @@ st terminal you need to compile again with the font name that you want to use
 
 
 ## nvim
-neovim very simple configuration with plug
+nvim advanced configuration with lazyvim
 https://github.com/0000marcell/MARBS/blob/master/config/nvim/init.vim
 
 ## checkbatcapacity
